@@ -27,28 +27,31 @@
           </label><br>
         </div>
 
-        <!-- Length Slider -->
-        <div class="form-group">
-            <label for="length">Length (in inches): <span id="length-val">70</span></label>
-            <input type="range" id="length" min="60" max="90" step="1" value="70">
-        </div>
+<!-- Length Slider -->
+<div class="form-group">
+    <label for="length">Length (in inches): <span id="length-val">60"</span></label>
+    <input type="range" id="length" min="60" max="108" step="1" value="70">
+</div>
 
-        <!-- Width Slider -->
-        <div class="form-group">
-            <label for="width">Width (in inches): <span id="width-val">20</span></label>
-            <input type="range" id="width" min="15" max="23" step="0.1" value="20">
-        </div>
+<!-- Width Slider (use sixteenths) -->
+<div class="form-group">
+    <label for="width">Width (in inches): <span id="width-val">20</span></label>
+    <!-- Multiply all values by 16 for slider -->
+    <input type="range" id="width" min="240" max="368" step="1" value="320">
+</div>
 
-        <!-- Thickness Slider -->
-        <div class="form-group">
-            <label for="thickness">Thickness (in inches): <span id="thickness-val">2.5</span></label>
-            <input type="range" id="thickness" min="2" max="3.5" step="0.1" value="2.5">
-        </div>
+<!-- Thickness Slider (use sixteenths) -->
+<div class="form-group">
+    <label for="thickness">Thickness (in inches): <span id="thickness-val">2.5</span></label>
+    <!-- Multiply all values by 16 -->
+    <input type="range" id="thickness" min="32" max="56" step="1" value="40">
+</div>
 
-        <!-- Volume Output -->
-        <div class="result">
-            <h2>Volume: <span id="volume-result">0</span> liters</h2>
-        </div>
+<!-- Volume Output -->
+<div class="result">
+    <h2>Volume: <span id="volume-result">0</span> liters</h2>
+</div>
+
     </div>
 
     <script src="script.js"></script>
